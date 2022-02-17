@@ -26,6 +26,7 @@ public class Arrays_of_Strings {
         int sum = 0;
         for(int i:numbers1){
             sum = sum + i;
+            System.out.println("i= " + i);
             System.out.println(sum);
         }
     }
