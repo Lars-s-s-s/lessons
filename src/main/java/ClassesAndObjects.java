@@ -5,27 +5,41 @@
 public class ClassesAndObjects{ // публичный класс, может быть только один и его имя должно соответствовать имени java-файла
     public static void main(String[] args) {
         Person one = new Person();
+        one.speak();
         one.name = "Гавриил";
         one.age = 3726;
-        System.out.println("Name - " + one.name +", age - " + one.age);
-
+        one.sayHello();
+        //System.out.println("Name - " + one.name +", age - " + one.age); //перенесём в метод
+        one.speak();
         Person two = new Person();
         two.name = "Kirill";
         two.age = 36;
-        System.out.println("Name - " + two.name +", age - " + two.age);
+        //System.out.println("Name - " + two.name +", age - " + two.age); //перенесём в метод
+        two.speak();
     }
 }
 
-class Person { // У классса могут быть:
-               // 1. Данные(поля класса) - класс человек: возраст, вес, цвет глаз, имя, фамилия и т.д.
-               // 2. Действия, которые он может совершать (методы класса) - класс челове: говорить, прыгать, бегать и т.д.
+class Person {
     String name;
     int age;
+
+    void speak(){
+        System.out.println("");
+        for(int i=0;i<3;i++) {
+            System.out.println("Name - " + name + ", age - " + age);
+            if (age<200) {break;}
+        }
+    }
+    void sayHello(){
+        System.out.println("Hello");
+    }
 }
 
 
 
-
+// У классса могут быть:
+// 1. Данные(поля класса) - класс человек: возраст, вес, цвет глаз, имя, фамилия и т.д.
+// 2. Действия, которые он может совершать (методы класса) - класс челове: говорить, прыгать, бегать и т.д.
 class test{ // обычный класс, может быть много в java-файле
 }
 class test2 {
