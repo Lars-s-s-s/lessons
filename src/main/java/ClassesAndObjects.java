@@ -5,8 +5,8 @@
 public class ClassesAndObjects{ // публичный класс, может быть только один и его имя должно соответствовать имени java-файла
     public static void main(String[] args) {
         Person one = new Person();
-        one.speak();
-        one.name = "Гавриил";
+        one.speak(); // пустые значения не инициализированные
+        one.setName("Гавриил");//one.name = "Гавриил";
         one.age = 3726;
         one.sayHello();
         //System.out.println("Name - " + one.name +", age - " + one.age); //перенесём в метод
@@ -25,6 +25,10 @@ class Person {
     String name;
     int age;
 
+    void setName(String username){// аналог one.name = "Гавриил";
+        name = username;
+    }
+
     int CalculateYearsToRetirement(){ //кол-во лет оставшееся до пенсии (до 65 лет)
         int year = 65 - age;
         //System.out.println("Количество лет до пенсии: " + year);
@@ -34,7 +38,7 @@ class Person {
     }
 
     void speak(){ // void - метод, который не возвращает. void - тип возвращаемого значения (void - пустота, ничего)
-        System.out.println("");
+        System.out.println(); // возвращает имя и возраст три раза, если возраст более 200 лет 9для примера)
         for(int i=0;i<3;i++) {
             System.out.println("Name - " + name + ", age - " + age);
             if (age<200) {break;}
