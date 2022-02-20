@@ -16,6 +16,8 @@ public class ClassesAndObjects{ // публичный класс, может б�
         two.age = 36;
         //System.out.println("Name - " + two.name +", age - " + two.age); //перенесём в метод
         two.speak();
+        System.out.println(one.name + " до пенсии " + one.CalculateYearsToRetirement() + " лет");
+        System.out.println(two.name + " до пенсии " + two.CalculateYearsToRetirement() + " лет");
     }
 }
 
@@ -23,7 +25,14 @@ class Person {
     String name;
     int age;
 
-    void speak(){
+    int CalculateYearsToRetirement(){ //кол-во лет оставшееся до пенсии (до 65 лет)
+        int year = 65 - age;
+        //System.out.println("Количество лет до пенсии: " + year);
+        return year; // после return происходит выход из метода
+        //System.out.println("Привет"); // не будет выведено
+    }
+
+    void speak(){ // void - метод, который не возвращает. void - тип возвращаемого значения (void - пустота, ничего)
         System.out.println("");
         for(int i=0;i<3;i++) {
             System.out.println("Name - " + name + ", age - " + age);
