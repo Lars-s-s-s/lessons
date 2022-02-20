@@ -28,7 +28,8 @@ class Person {
     int CalculateYearsToRetirement(){ //кол-во лет оставшееся до пенсии (до 65 лет)
         int year = 65 - age;
         //System.out.println("Количество лет до пенсии: " + year);
-        return year; // после return происходит выход из метода
+        return year; // после return происходит выход из метода, тип выводимого значения должен совпадать с объявленным
+                     // в описании метода до его названия
         //System.out.println("Привет"); // не будет выведено
     }
 
