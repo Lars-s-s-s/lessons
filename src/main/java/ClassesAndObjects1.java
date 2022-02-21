@@ -1,4 +1,4 @@
-
+// Lesson 18 - getters and setters
 
 public class ClassesAndObjects1{
     public static void main(String[] args) {
