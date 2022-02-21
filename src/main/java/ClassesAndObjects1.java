@@ -16,7 +16,7 @@ class Person1 {
     private String name; // private - поле видно и доступно в пределах своего класса
     private int age;
 
-    public void setName(String userName){ // сеттер для Name
+    public void setName(String userName){ // сеттер для name
         if (userName.isEmpty()) {
             System.out.println("Вы ввели пустое ИМЯ");
         } else { name = userName;}
@@ -24,9 +24,9 @@ class Person1 {
 
     public String getName(){ // геттер для Name
         return name;
-    }
+    } // геттер для name
 
-    public void setAge(int userAge){ // сеттер для Age
+    public void setAge(int userAge){ // сеттер для age
         if (userAge <= 0) {
             System.out.println("Возраст должен быть строго больше НУЛЯ");
         } else {age = userAge;}
@@ -34,7 +34,7 @@ class Person1 {
 
     public int getAge() { // геттер для Age
         return age;
-    }
+    } // геттер для age
 
     int CalculateYearsToRetirement(){
         int year = 65 - age;
