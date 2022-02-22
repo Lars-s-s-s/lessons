@@ -5,7 +5,8 @@ public class Lesson20 {
 
     }
 }
-class Human{
+class Human20{
+
     String name;
     int age;
 
