@@ -2,6 +2,9 @@
 
 public class Lesson20 {
     public static void main(String[] args) {
+        Human human = new Human();
+        human.setName("Иноккентий"); // инициализация полей объекта
+        human.setAge(12);
 
     }
 }

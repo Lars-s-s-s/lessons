@@ -14,8 +14,8 @@ public class Lesson19 {
     }
 }
 class Human{
-    String name;
-    int age;
+    private String name;
+    private int age;
 /*
     public void setName(String myName) {
         name = myName;
