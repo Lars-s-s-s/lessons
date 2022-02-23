@@ -5,6 +5,7 @@ public class Lesson21 {
     Human21.description = "Переменная класса"; // Относится не к конкретному объекту, а к классу и делится между всеми объектами класса.
     Human21.getDescription(); // Вывод переменной без создания объекта класса.
     Human21 chel = new Human21("Жека", 44);
+    chel.printNumberOfPeople();
     chel.description = "Изменили переменную класса через объект - так плохо и не корректно делать!";
     // System.out.println(chel.description); и так делать плохо и не корректно!
     Human21.getDescription();
@@ -13,10 +14,15 @@ public class Lesson21 {
     System.out.println();
     chel.getAllFilds();
     Human21 chel1 = new Human21("Ждека", 34);
+    chel1.printNumberOfPeople();
     Human21.description = "Поменяли дескрипшн";
     chel.getAllFilds();
     chel1.getAllFilds();
-
+    System.out.println();
+    Human21 chel2 = new Human21("Роберт", 12);
+    chel.printNumberOfPeople();
+    chel1.printNumberOfPeople();
+    chel2.printNumberOfPeople();
 
     }
 }
@@ -25,10 +31,12 @@ class Human21{
     private String name; // Переменные объекта. Пока нет созданного объекта нет и переменной
     private int age;
     public static String description; // переменная класса
+    private static int countPeople; // будем считать кол-во созданных объектов человек
 
     public Human21(String name, int age){
         this.name = name;
         this.age = age;
+        countPeople++;
     }
 
     public void setName(String name) { this.name = name; } // Методы объекта. Пока нет созданного объекта нет и переменной с которой можно что-то делать
@@ -38,6 +46,10 @@ class Human21{
     public static void getDescription(){ // статический метод класса
         System.out.println(description);
 
+    }
+
+    public void printNumberOfPeople(){
+        System.out.println("Количество объектов типа Human21 - " + countPeople);
     }
 
     public void getAllFilds(){
