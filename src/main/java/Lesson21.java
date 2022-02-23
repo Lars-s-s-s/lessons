@@ -54,6 +54,7 @@ class Human21{
     public void getAllFilds(){
         System.out.println("Возраст - " + age + ", Имя - " + name + ", дескрипшн - " + description); // используем статическую переменную description в обычном методе.
     }
+
     /*
     public static void printAllFilds(){
         System.out.println("Возраст - " + age + ", Имя - " + name + ", дескрипшн - " + description); // 1) здесь не можем использовать age и name так как в каждом объекте это своя переменная.
