@@ -27,7 +27,6 @@ public class Lesson21 {
     }
 }
 class Human21{
-
     private String name; // Переменные объекта. Пока нет созданного объекта нет и переменной
     private int age;
     public static String description; // переменная класса
