@@ -2,7 +2,7 @@
 
 public class Lesson21 {
     public static void main(String[] args) {
-    Human21 chel = new Human21();
+    Human21 chel = new Human21("Жека", 44);
 
     }
 }
