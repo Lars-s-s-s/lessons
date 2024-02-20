@@ -5,7 +5,7 @@ public class Lessson49_2 {
         // 4! = 4 * 3 * 2 * 1
         // 1! = 1
         // 0! = 1
-        System.out.println("Факториал от 4 равен " + fac (4));
+        System.out.println("Факториал от 10 равен " + fac (10));
         // fac(4)
         // 4 * fac(3) = 4 * 6 = 24
         // 3 * fac(2) = 3 * 2 = 6
